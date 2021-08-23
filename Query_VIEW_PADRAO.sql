@@ -1,6 +1,4 @@
 USE TREINO
-
-
 -- view indexada
 GO 
 CREATE VIEW vw_ConsultaSimples
@@ -15,9 +13,9 @@ CREATE UNIQUE CLUSTERED INDEX IX_ConsultaSimples
 ON vw_ConsultaSimples(nomeCliente,dataPedido)
 
 SELECT * FROM vw_ConsultaSimples
-WHERE nomeCliente LIKE 'E%'; -- Retorna os clientes cujo  o nome comeÁa com E
+WHERE nomeCliente LIKE 'E%'; -- Retorna os clientes cujo  o nome come√ßa com E
 
---Variaveis e controles de decis„o
+--Variaveis e controles de decis√£o
 --DECLARE @NomeVariavel Tipo de Dado
 
 DECLARE @VAL int, @val2 int, @decimal decimal(6,2);
@@ -26,7 +24,7 @@ SET @val2 = 5;
 SET @decimal = @VAL/@val2;
 PRINT @decimal;
 
--- Exemplo de falha na convers„o implicita de tipos
+-- Exemplo de falha na convers√£o implicita de tipos
 DECLARE @VAL4 int, @val3 int, @decimal2 decimal(6,2);
 SET @VAL4 = 20;
 SET @val3 = 3;
